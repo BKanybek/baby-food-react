@@ -7,8 +7,8 @@ export const MyRoutes = () => {
   return (
     <BrowserRouter>
         <Routes>
-            <Route path='/' element={<Navbar/>} />
-            <Route path='Home' element={<Home/>} />
+            <Route path='/' element={<Home/>} />
+            {/* <Route path='/' element={<Navbar/>} /> */}
         </Routes>
     </BrowserRouter>
   )
