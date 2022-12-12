@@ -56,7 +56,7 @@ export const Navbar = () => {
       <div className={`nav-links ${Mobile && "open"}`}>
           <div className='drop-wrapper' to="/" onClick={() => setDrop(!drop)}>Каталог товаров
               <div className={`links-dropdown ${!drop && 'drop-list'}`} onClick={() => setMobile(false)}>
-                <Link to="/list">Посмотреть все</Link>
+                <Link to="products">Посмотреть все</Link>
                 <Link to="/add">Детское питание</Link>
                 <Link to="/">Подгузники</Link>
                 <Link to="/add">Товары по оптовым ценам</Link>
