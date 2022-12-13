@@ -5,6 +5,7 @@
     max-width: 1260px;
     margin: auto;
     height: 70px;
+    padding: 20px 0;
 }
 
 .img-logo{
@@ -48,7 +49,6 @@
 .icons{
     display: flex;
     justify-content: center;
-    order: 4;
 }
 
 .icons a{
@@ -119,7 +119,7 @@
     
 }
 .drop-list a:hover{
-    color: black;
+    color: green;
 }
 
 @keyframes drop-animation {
