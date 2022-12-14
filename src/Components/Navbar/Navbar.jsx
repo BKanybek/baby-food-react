@@ -4,9 +4,12 @@ import Logo from '../../Img/logo.png';
 import {Link} from 'react-router-dom'
 import { useState } from 'react';
 import { Badge } from '@mui/material';
-import { AiOutlineShopping, AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
+// import { AiOutlineShopping, AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
+import Cart from '../../Img/icons/cart.png';
+import Favorite from '../../Img/icons/favorite.png';
+import User from '../../Img/icons/user.png';
 
 export const Navbar = () => {
   const [Mobile, setMobile] = useState(false)
@@ -50,22 +53,17 @@ export const Navbar = () => {
 
   return (
     <nav className='navbar'>
-        <Link to='/' className='navbar-logo'>
-          <img className='img-logo' src={Logo} alt="logo" />  
-        </Link>
-      <div className={`nav-links ${Mobile && "open"}`}>
-          <div className='drop-wrapper' to="/" onClick={() => setDrop(!drop)}>Каталог товаров
-              <div className={`links-dropdown ${!drop && 'drop-list'}`} onClick={() => setMobile(false)}>
-                <Link to="products">Посмотреть все</Link>
-                <Link to="/add">Детское питание</Link>
-                <Link to="/">Подгузники</Link>
-                <Link to="/add">Товары по оптовым ценам</Link>
-                  {/* <Link to="/">Юбки и Платья</Link>
-                  <Link to="/add">Брюки и шорты</Link>
-                  <Link to="/add">Деним</Link>
-                  <Link to="/add">Верхняя одежда</Link> */}
-              </div>
-              <ul>
+      <Link to='/' className='navbar-logo'>
+        <img className='img-logo' src={Logo} alt="logo" />  
+      </Link>
+        <ul className={`nav-links ${Mobile && "open"}`}>
+          <div className='nav-items'>
+            <li>
+              <Link>
+                Каталог товаров
+                <i className='fas fa-caret-down'/>
+              </Link>
+            </li>
             <li>
               <Link>
                 О нас
@@ -78,7 +76,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link>
-                Контакты
+                  Контакты
               </Link>
             </li>
             <li>
@@ -86,30 +84,61 @@ export const Navbar = () => {
                 Акции
               </Link>
             </li>
-
-          </ul>        
-          </div> 
-         
+          </div>
           <div className='icons'>
-              <Link to='/cart'>
-              <Badge>
-                <AiOutlineShopping/>
-              </Badge> 
-              </Link>
-              <Link to='/'>
-              <Badge>
-                <AiOutlineHeart/>
-              </Badge>
-              </Link>
-              <Link  to='/'>
-              <AiOutlineUser/>
-              </Link>
-            </div>
+          <Link to='/cart'>
+            <Badge>
+              <img className='img-cart' src={Cart} alt="cart" />
+            </Badge> 
+          </Link>
+          <Link to='/'>
+            <Badge>
+              <img className='img-favorite' src={Favorite} alt="favorite" />
+            </Badge>
+          </Link>
+          <Link  to='/'>
+            <img className='img-user' src={User} alt="user" />
+          </Link>
         </div>
-         
-        <button className='mobile-menu-icon' onClick={handleClick}>
-          {Mobile ? <ImCross/> : <FaBars/>}   
-        </button>
+        </ul>
+        
+      <button className='mobile-menu-icon' onClick={handleClick}>
+        {Mobile ? <ImCross/> : <FaBars/>}   
+      </button>
     </nav>
   )
 }
+            // <div className='drop-wrapper' to="/"><p onClick={() => setDrop(!drop)}>Каталог товаров</p>
+            // <div className={`links-dropdown ${!drop && 'drop-list'}`} onClick={() => setMobile(false)}>
+            //   <Link to="products">Посмотреть все</Link>
+            //   <Link to="/add">Детское питание</Link>
+            //   <Link to="/">Подгузники</Link>
+            //   <Link to="/add">Товары по оптовым ценам</Link>
+            //     {/* <Link to="/">Юбки и Платья</Link>
+            //     <Link to="/add">Брюки и шорты</Link>
+            //     <Link to="/add">Деним</Link>
+            //     <Link to="/add">Верхняя одежда</Link> */}
+            // </div>
+            // <ul>
+            //   <li>
+            //     <Link>
+            //       О нас
+            //     </Link>
+            //   </li>
+            //   <li>
+            //     <Link>
+            //       Разное
+            //     </Link>
+            //   </li>
+            //   <li>
+            //     <Link>
+            //       Контакты
+            //     </Link>
+            //   </li>
+            //   <li>
+            //     <Link>
+            //       Акции
+            //     </Link>
+            //   </li>
+            // </ul>        
+            // </div>  
