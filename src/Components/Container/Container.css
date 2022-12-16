@@ -1,0 +1,25 @@
+.container-container{
+    max-width: 1260px;
+    margin: 0 auto;
+    /* height: 300px; */
+    /* background: black; */
+    margin-top: 100px;
+}
+
+.container-box{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3rf 2rf;
+    grid-gap: 10px;
+    display: grid;
+    
+}
+
+.container-box > div{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.box-1{
+    width: 310px;
+    height: 585px;
+}
