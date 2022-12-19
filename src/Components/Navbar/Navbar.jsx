@@ -59,32 +59,44 @@ export const Navbar = () => {
         <ul className={`nav-links ${Mobile && "open"}`}>
           <div className='nav-items'>
             <li>
-              <Link>
+              <Link className='hasChild' to='/'>
                 Каталог товаров
                 <i className='fas fa-caret-down'/>
               </Link>
+              <div className='dropdown'>
+                    <div className="row">
+                      <ul>
+                        <li><a href="/">Показать все</a></li>
+                        <li><a href="/">Подгузники</a></li>
+                        <li><a href="/">Детское питание</a></li>
+                        <li><a href="/">Lorem, ipsum.</a></li>
+                        <li><a href="/">Lorem, ipsum.</a></li>
+                      </ul>
+                    </div>
+              </div>
             </li>
             <li>
-              <Link>
+              <Link  to='/'>
                 О нас
               </Link>
             </li>
             <li>
-              <Link>
+              <Link  to='/'>
                 Разное
               </Link>
             </li>
             <li>
-              <Link>
+              <Link  to='/'>
                   Контакты
               </Link>
             </li>
             <li>
-              <Link>
+              <Link  to='/'>
                 Акции
               </Link>
             </li>
           </div>
+
           <div className='icons'>
           <Link to='/cart'>
             <Badge>

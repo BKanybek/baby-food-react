@@ -1,9 +1,9 @@
 .container-container{
-    max-width: 1260px;
-    margin: 0 auto;
+    /* width: 1260px; */
+    /* margin: 0 auto; */
     /* height: 300px; */
     /* background: black; */
-    margin-top: 100px;
+    margin: 100px 20px;
 }
 
 .container-box{
@@ -15,17 +15,47 @@
 }
 
 .container-box > div{
-    padding: 10px;
     border: 1px solid black;
 }
 
 .box-1{
+    /* width: 310px; */
+    height: 585px;
     grid-row: 1/3;
 }
 .box-2{
     grid-row: 1/3;
+    /* width: 631px; */
+    height: 585px;
+    /* overflow: hidden; */
+   
+}
+
+.box-3{
+    /* width: 311px; */
+    height: 289px;  
 }
 
 .box-4{
+    /* width: 631px; */
+    height: 289px;
     grid-column: 4/6;
+}
+.box-5{
+    /* width: 311px; */
+    height: 289px;
+}
+.box-6{
+    /* width: 311px; */
+    height: 289px;
+}
+.box-7{
+    /* width: 311px; */
+    height: 289px;
+}
+
+.box-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
