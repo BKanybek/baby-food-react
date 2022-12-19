@@ -4,7 +4,6 @@ import Logo from '../../Img/logo.png';
 import {Link} from 'react-router-dom'
 import { useState } from 'react';
 import { Badge } from '@mui/material';
-// import { AiOutlineShopping, AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import Cart from '../../Img/icons/cart.png';
@@ -12,24 +11,11 @@ import Favorite from '../../Img/icons/favorite.png';
 import User from '../../Img/icons/user.png';
 
 export const Navbar = () => {
-  const [Mobile, setMobile] = useState(false)
-  const [show, setShow] = useState(true)
-  const [drop, setDrop] = useState(true)
-  console.log(Mobile);
-
-  const[value, setValue ] = useState('')
-
-  const onChange = (event) => {
-    setValue(event.target.value)
-  }
+  const [mobile, setMobile] = useState(false);
+  console.log(mobile);
 
   const handleClick = () => {
-    setMobile(!Mobile)
-  }
-
-  const reset = (e) => {
-    setShow(!show);
-    setValue('')
+    setMobile(!mobile)
   }
 
   const handleResize = () => {
@@ -44,10 +30,10 @@ export const Navbar = () => {
 
 
   useEffect(() =>{
-    if (Mobile) {
+    if (mobile) {
     document.body.style.overflow = 'hidden';
     } else {document.body.style.overflow = 'visible'};
-  }, [Mobile])
+  }, [mobile])
 
   
 
@@ -56,66 +42,43 @@ export const Navbar = () => {
       <Link to='/' className='navbar-logo'>
         <img className='img-logo' src={Logo} alt="logo" />  
       </Link>
-        <ul className={`nav-links ${Mobile && "open"}`}>
+        <ul className={`nav-links ${mobile && "open"}`}>
           <div className='nav-items'>
-            <li>
-              <Link className='hasChild' to='/'>
-                Каталог товаров
-                <i className='fas fa-caret-down'/>
-              </Link>
+            <li><Link to='/'>Каталог товаров<i className='fas fa-caret-down'/></Link>
               <div className='dropdown'>
-                    <div className="row">
-                      <ul>
-                        <li><a href="/">Показать все</a></li>
-                        <li><a href="/">Подгузники</a></li>
-                        <li><a href="/">Детское питание</a></li>
-                        <li><a href="/">Lorem, ipsum.</a></li>
-                        <li><a href="/">Lorem, ipsum.</a></li>
-                      </ul>
-                    </div>
+                <ul>
+                  <li><a href='/'>Показать все</a></li>
+                  <li><a href='/'>Подгузники</a></li>
+                  <li><a href='/'>Детское питание</a></li>
+                  <li><a href='/'>Lorem, ipsum.</a></li>
+                  <li><a href='/'>Lorem, ipsum.</a></li>
+                </ul>
               </div>
             </li>
-            <li>
-              <Link  to='/'>
-                О нас
-              </Link>
-            </li>
-            <li>
-              <Link  to='/'>
-                Разное
-              </Link>
-            </li>
-            <li>
-              <Link  to='/'>
-                  Контакты
-              </Link>
-            </li>
-            <li>
-              <Link  to='/'>
-                Акции
-              </Link>
-            </li>
+            <li><a href='/'>О нас</a></li>
+            <li><a href='products'>Разное</a></li>
+            <li><a href='/'>Контакты</a></li>
+            <li><a href='/'>Акции</a></li>
           </div>
-
           <div className='icons'>
-          <Link to='/cart'>
+          <a href='/cart'>
             <Badge>
               <img className='img-cart' src={Cart} alt="cart" />
             </Badge> 
-          </Link>
-          <Link to='/'>
+          </a>
+          <a href='/'>
             <Badge>
               <img className='img-favorite' src={Favorite} alt="favorite" />
             </Badge>
-          </Link>
-          <Link  to='/'>
+          </a>
+          <a href='/'>
             <img className='img-user' src={User} alt="user" />
-          </Link>
+          </a>
         </div>
         </ul>
         
       <button className='mobile-menu-icon' onClick={handleClick}>
-        {Mobile ? <ImCross/> : <FaBars/>}   
+        {mobile ? <ImCross/> : <FaBars/>}   
       </button>
     </nav>
   )
