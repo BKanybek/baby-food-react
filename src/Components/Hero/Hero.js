@@ -1,8 +1,8 @@
 import React from 'react';
 import './Hero.css';
-import Img1 from '../../Img/hero-img/hero-img-test.jpg';
+import Img1 from '../../Img/hero-img/food.jpg';
 import Img2 from '../../Img/hero-img/hero-img2.jpg';
-import Img3 from '../../Img/hero-img/img-hero.jpg';
+import Img3 from '../../Img/hero-img/Papmpersjpg.jpg';
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,10 +19,10 @@ export const Hero = () => {
     <div className='hero-container'>
       <Swiper
         spaceBetween={2}
-        speed={1112000}
+        speed={3000}
         centeredSlides={true}
         autoplay={{
-          delay: 500,
+          delay: 111500,
           disableOnInteraction: false,
         }}
         pagination={{
