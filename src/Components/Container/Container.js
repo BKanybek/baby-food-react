@@ -7,13 +7,13 @@ export const Container = () => {
 
     <div className='container-container'> 
       <div className='container-box'>
-        <div className='box-1'>1</div>
-        <div className='box-2'>2</div>
-        <div className='box-3'>3</div>
-        <div className='box-4'>4</div>
-        <div className='box-5'>5</div>
-        <div className='box-6'>6</div>
-        <div className='box-7'>7</div>
+        <div className='box-1'><img className='box-img' src={imgFood} alt='imgFood'/></div>
+        <div className='box-2'><img className='box-img' src={imgFood} alt='imgFood'/></div>
+        <div className='box-3'><img className='box-img' src={imgFood} alt='imgFood'/></div>
+        <div className='box-4'><img className='box-img' src={imgFood} alt='imgFood'/></div>
+        <div className='box-5'><img className='box-img' src={imgFood} alt='imgFood'/></div>
+        <div className='box-6'><img className='box-img' src={imgFood} alt='imgFood'/></div>
+        <div className='box-7'><img className='box-img' src={imgFood} alt='imgFood'/></div>
      </div>  
     </div>
   )
