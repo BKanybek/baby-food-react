@@ -19,7 +19,7 @@ export const Hero = () => {
     <div className='hero-container'>
       <Swiper
         spaceBetween={2}
-        speed={2000}
+        speed={1112000}
         centeredSlides={true}
         autoplay={{
           delay: 500,
