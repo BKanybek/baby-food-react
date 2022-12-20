@@ -40,16 +40,17 @@
 }
 
 .nav-links li a:hover {
-    color: rgb(0, 168, 0);
+    /* color: rgb(0, 168, 0); */
+    /* font-weight: 600; */
     transition: 0.3;
 
 }
 
 .nav-links li a::after{
     content: '';
-    height: 3px;
+    height: 4px;
     width: 0;
-    background: rgb(0, 0, 0); 
+    background: rgb(109, 255, 109);
     position: absolute;
     left: 0;
     bottom: -5px;

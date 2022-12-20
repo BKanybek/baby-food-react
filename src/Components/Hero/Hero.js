@@ -13,7 +13,6 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 export const Hero = () => {
-  
   return (
     <>
     <div className='hero-container'>
@@ -38,9 +37,13 @@ export const Hero = () => {
               src={Img1}
               alt='hero-img'
           />
-          <h1 className='hero-text' style={{color: 'white'}}>
-            Baby Food
-          </h1>
+            <div className='hero-text-one'>
+              <h1>
+                Детское питание
+              </h1>
+              <p className='text-hero'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <button className='btn-hero'>Посмотреть</button>
+             </div>
         </SwiperSlide>
         <SwiperSlide>
           <img
@@ -48,9 +51,13 @@ export const Hero = () => {
             src={Img2}
             alt='hero-img'
           />
-          <h1 className='hero-text'>
-            Baby Food
-          </h1>
+          <div className='hero-text-next'>
+            <h1>
+              Подгузники
+            </h1>
+            <p className='text-hero'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button className='btn-hero'>Посмотреть</button>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
           <img
@@ -58,12 +65,17 @@ export const Hero = () => {
             src={Img3}
             alt='hero-img'
           />
-          <h1 className='hero-text'>
-            Baby Food
-          </h1>
+          <div className='hero-text-last'>
+            <h1>
+              Baby Food
+            </h1>
+            <p className='text-hero'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            {/* <button className='btn-hero'>Посмотреть</button> */}
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>
+
     </>
   )
 }

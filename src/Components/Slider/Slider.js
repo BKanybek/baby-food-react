@@ -37,8 +37,8 @@ export const Slider = () => {
         className="mySwiper"
        
       >
-        <SwiperSlide><div className='slider-card'>1</div></SwiperSlide>
-        {/* <SwiperSlide><div className='slider'>2</div></SwiperSlide>
+        <SwiperSlide><div className='slider'>1</div></SwiperSlide>
+        <SwiperSlide><div className='slider'>2</div></SwiperSlide>
         <SwiperSlide><div className='slider'>3</div></SwiperSlide>
         <SwiperSlide><div className='slider'>4</div></SwiperSlide>
         <SwiperSlide><div className='slider'>5</div></SwiperSlide>
@@ -56,7 +56,7 @@ export const Slider = () => {
         <SwiperSlide><div className='slider'>18</div></SwiperSlide>
         <SwiperSlide><div className='slider'>19</div></SwiperSlide>
         <SwiperSlide><div className='slider'>20</div></SwiperSlide>
-        <SwiperSlide><div className='slider'>21</div></SwiperSlide> */}
+        <SwiperSlide><div className='slider'>21</div></SwiperSlide>
       </Swiper>
     </div>
   )
