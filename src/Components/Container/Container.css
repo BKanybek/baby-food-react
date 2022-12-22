@@ -8,7 +8,7 @@
 
 .container-box{
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, 50vh);
     grid-gap: 10px;
     display: grid;
     
@@ -33,25 +33,25 @@
 
 .box-3{
     /* width: 311px; */
-    height: 289px;  
+    /* height: 289px;   */
 }
 
 .box-4{
     /* width: 631px; */
-    height: 289px;
+    /* height: 289px; */
     grid-column: 4/6;
 }
 .box-5{
     /* width: 311px; */
-    height: 289px;
+    /* height: 289px; */
 }
 .box-6{
     /* width: 311px; */
-    height: 289px;
+    /* height: 289px; */
 }
 .box-7{
     /* width: 311px; */
-    height: 289px;
+    /* height: 289px; */
 }
 
 .box-img{
