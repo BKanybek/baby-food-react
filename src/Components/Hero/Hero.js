@@ -21,7 +21,7 @@ export const Hero = () => {
         speed={3000}
         centeredSlides={true}
         autoplay={{
-          delay: 111500,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -39,7 +39,7 @@ export const Hero = () => {
           />
             <div className='hero-text-one'>
               <h1>
-                Детское питание
+                Детское питание 
               </h1>
               <p className='text-hero'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               <button className='btn-hero'>Посмотреть</button>
