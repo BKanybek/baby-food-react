@@ -1,5 +1,5 @@
 import React from 'react';
-import { About } from '../About/About';
+// import { About } from '../About/About';
 import { Container } from '../Container/Container';
 import { Footer } from '../Footer/Footer';
 import { Hero } from '../Hero/Hero';
@@ -11,7 +11,7 @@ export const Home = () => {
   return (
     <>
        <Hero/>
-       <About/>
+       {/* <About/> */}
        <Container/>
        <Slider/>
        <Footer/>

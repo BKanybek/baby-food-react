@@ -7,23 +7,7 @@ export const Footer = () => {
     <div>
         <div className='footer'>
           <div className='footer-container'>
-            {/* <div className='footer-logo-container'>
-              <img className='footer-logo' src={footerImg} alt='img'/>
-            </div> */}
-            <div className='footer-info'>
-              <div className='footer-info-nav'>
-                
-
-              </div>
-              <div className='footer-info-contacts'>
-                <p>Контактные данные:</p>
-
-              </div>
-              <div className='footer-info-social'>
-                <p>Мы в социальных сетях:</p>
-
-              </div>
-            </div>
+            <div className='footer__content'>FOOTER</div>
           </div>
         </div>
     </div>
