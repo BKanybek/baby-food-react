@@ -1,6 +1,6 @@
 .hero-container{
-    /* max-width: 1260px; */
-    /* margin: 0 auto; */
+    max-width: 1260px;
+    margin: 0 auto;
     position: relative;
     height: 80vh;
 }
@@ -28,10 +28,14 @@
     -webkit-align-items: center;
     align-items: center;
   }
+
+  .swiper-pagination-bullet-active{
+    background: rgb(255, 255, 255) !important;
+  }
   
   .swiper-slide img {
     display: block;
-    filter: brightness(70%)   
+    /* filter: brightness(80%)    */
 
   }
 
@@ -87,7 +91,33 @@
     padding-bottom: 20px;
     color: #fff;
     font-size: 30px;
+    text-shadow: 
+		-0   -2px 0   #000000,
+		 0   -2px 0   #000000,
+		-0    2px 0   #000000,
+		 0    2px 0   #000000,
+		-2px -0   0   #000000,
+		 2px -0   0   #000000,
+		-2px  0   0   #000000,
+		 2px  0   0   #000000,
+		-1px -2px 0   #000000,
+		 1px -2px 0   #000000,
+		-1px  2px 0   #000000,
+		 1px  2px 0   #000000,
+		-2px -1px 0   #000000,
+		 2px -1px 0   #000000,
+		-2px  1px 0   #000000,
+		 2px  1px 0   #000000,
+		-2px -2px 0   #000000,
+		 2px -2px 0   #000000,
+		-2px  2px 0   #000000,
+		 2px  2px 0   #000000,
+		-2px -2px 0   #000000,
+		 2px -2px 0   #000000,
+		-2px  2px 0   #000000,
+		 2px  2px 0   #000000;
   }
+
   
   /* Hero-2 */
 
