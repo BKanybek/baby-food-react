@@ -1,8 +1,8 @@
 .hero-container{
-    max-width: 1260px;
-    margin: 0 auto;
+    /* max-width: 1260px; */
+    /* margin: 0 auto; */
     position: relative;
-    height: 80vh;
+    height: 70vh;
 }
 
 .swiper {
@@ -35,7 +35,7 @@
   
   .swiper-slide img {
     display: block;
-    filter: brightness(90%)   
+    filter: brightness(100%)   
 
   }
 

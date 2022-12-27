@@ -22,10 +22,10 @@ export const Slider = () => {
       <Swiper
         slidesPerView={5}
         spaceBetween={10}
-        // slidesPerGroup={5}
+        // slidesPerGroup={1}
         loop={true}
         loopFillGroupWithBlank={true}
-        grabCursor={true}
+        // grabCursor={true}
         pagination={{
           clickable: true,
           dynamicBullets: true,
@@ -36,6 +36,10 @@ export const Slider = () => {
           },
           520: {
             slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 5,
           }
         }}
         navigation={true}
