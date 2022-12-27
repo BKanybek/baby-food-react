@@ -21,17 +21,17 @@ export const Slider = () => {
       </div>  
       <Swiper
         slidesPerView={5}
-        spaceBetween={10}
-        // slidesPerGroup={1}
+        spaceBetween={20}
+        slidesPerGroup={1}
         loop={true}
         loopFillGroupWithBlank={true}
-        // grabCursor={true}
+        grabCursor={true}
         pagination={{
           clickable: true,
           dynamicBullets: true,
         }}
         breakpoints={{
-          0: {
+          430: {
             slidesPerView: 1,
           },
           520: {
