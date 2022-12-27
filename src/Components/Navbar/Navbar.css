@@ -153,11 +153,16 @@
 /* Адаптация */
 
 @media (max-width: 1024px){
+    .navbar{
+        max-width: 960px;
+    }
+
+
     .nav-items{
-        margin: 0 0 0 20px;
+        margin: 0 0 0 15px;
     }
     .nav-links li a {
-        font-size: 18px;
+        font-size: 16px;
         padding: 0;
     }
 }
