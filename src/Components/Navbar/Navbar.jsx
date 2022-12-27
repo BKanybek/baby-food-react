@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Navbar.css';
-import Logo from '../../Img/logo.png';
+import Logo from '../../Img/icons/LogoTest.png';
 import {Link} from 'react-router-dom'
 import { useState } from 'react';
 import { Badge } from '@mui/material';
