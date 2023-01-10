@@ -3,6 +3,7 @@ import React from 'react';
 import { Container } from '../Container/Container';
 import { Footer } from '../Footer/Footer';
 import { Hero } from '../Hero/Hero';
+import { NavMenu } from '../Nav/NavMenu';
 import { Slider } from '../Slider/Slider';
 
 import './Home.css';
@@ -10,11 +11,12 @@ import './Home.css';
 export const Home = () => {
   return (
     <>
-       <Hero/>
-       {/* <About/> */}
-       <Container/>
-       <Slider/>
-       <Footer/>
+      <NavMenu/>
+      <Hero/>
+      {/* <About/> */}
+      <Container/>
+      <Slider/>
+      <Footer/>
     </>
   )
 }

@@ -21,7 +21,7 @@ export const Slider = () => {
       </div>  
       <Swiper
         slidesPerView={5}
-        spaceBetween={20}
+        spaceBetween={50}
         slidesPerGroup={1}
         loop={true}
         loopFillGroupWithBlank={true}
