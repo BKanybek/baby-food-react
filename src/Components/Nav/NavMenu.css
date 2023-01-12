@@ -1,19 +1,21 @@
+.desktop-navigation-menu{
+  display: block;
+  box-sizing: border-box;
+}
+
+ .nav-container{
+  max-width: 1260px;
+  margin: 0 auto;
+
+}
 .desktop-menu-category-list {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    height: 55px;
-    list-style: none;
-    /* text-decoration: none; */
+    gap: 50px;
   }
-  .nav-container{
-    max-width: 1200px;
-    /* height: 55px; */
-    margin: 0 auto;
-
-  }
+ 
 
   .desktop-menu-category-list .menu-category:not(:nth-child(2)) { position: relative; }
 
@@ -63,7 +65,6 @@
     pointer-events: none;
     transition: 0.2s ease;
     z-index: 5;
-    /* text-decoration: none; */
   }
 
   .desktop-menu-category-list .menu-category:hover > .dropdown-panel {
@@ -74,6 +75,7 @@
   }
 
   .dropdown-panel-list .menu-title a {
+    display: inline-block;
     color: hsl(0, 0%, 27%);
     font-size: 20px;
     font-weight: 600;
@@ -83,22 +85,18 @@
   }
 
   .panel-list-item a {
+    display: inline-block;
     color:  hsl(0, 0%, 47%);
     font-size: 18px;
     text-transform: capitalize;
     transition: 0.2s ease;
-    /* text-decoration: none; */ 
   }
 
-  .panel-list-item a:hover { color: hsl(353, 100%, 78%); }
+  .panel-list-item a:hover { color: hsl(96, 100%, 53%); }
   .panel-list-item:not(:last-child) a { padding: 4px 0; }
   /* .panel-list-item:last-child { margin-top: 20px; } */
 
-  .panel-list-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
+
 
   .dropdown-list {
     position: absolute;
@@ -126,30 +124,25 @@
   }
 
   .dropdown-list .dropdown-item a {
-    color: hsl(0, 0%, 47%);
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    /* color: hsl(0, 0%, 47%); */
     font-size: 18px;
     text-transform: capitalize;
-    padding: 4px 20px;
+    padding: 10px 20px;
     transition: 0.2s ease;
   }
 
   .menu-category {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-bottom: 1px solid gray; */
+    /* border-bottom: 1px solid gray;  */
     /* margin-left: 10px; */
   }
-/* 
-  .menu-title{
-    font-size: 34px;
-    font-weight: 900;
-    color: black;
-    padding: 10px 0;
-  } */
 
-  .dropdown-list .dropdown-item a:hover { color: hsl(353, 100%, 78%); }
+  .dropdown-list .dropdown-item a:hover { color: hsl(117, 99%, 47%); }
 
   li {
     list-style: none;
