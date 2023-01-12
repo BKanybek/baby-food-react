@@ -7,10 +7,10 @@ export const NavMenu = () => {
       <div className="nav-container">
         <ul className="desktop-menu-category-list">
           <li className="menu-category">
-            <a href="/" className="menu-title">Home</a>
+            <a href="/" className="menu-title">Ipsum</a>
           </li>
           <li className="menu-category">
-            <a href="/" className="menu-title">Categories</a>
+            <a href="/" className="menu-title">Категории</a>
             <div className="dropdown-panel">
               <ul className="dropdown-panel-list">
                 <li className="menu-title">
@@ -34,7 +34,7 @@ export const NavMenu = () => {
               </ul>
               <ul className="dropdown-panel-list">
                 <li className="menu-title">
-                  <a href="/">Men's</a>
+                  <a href="/">Памперсы</a>
                 </li>
                 <li className="panel-list-item">
                   <a href="/">Formal</a>
@@ -54,7 +54,7 @@ export const NavMenu = () => {
               </ul>
               <ul className="dropdown-panel-list">
                 <li className="menu-title">
-                  <a href="/">Women's</a>
+                  <a href="/">Детское питание</a>
                 </li>
                 <li className="panel-list-item">
                   <a href="/">Formal</a>
@@ -95,7 +95,7 @@ export const NavMenu = () => {
             </div>
           </li>
           <li className="menu-category">
-            <a href="/" className="menu-title">Men's</a>
+            <a href="/" className="menu-title">Lorem</a>
             <ul className="dropdown-list">
               <li className="dropdown-item">
                 <a href="/">Shirt</a>
@@ -113,61 +113,62 @@ export const NavMenu = () => {
           </li>
 
           <li className="menu-category">
-            <a href="/" className="menu-title">Women's</a>
+            <a href="/" className="menu-title">Lorem</a>
             <ul className="dropdown-list">
               <li className="dropdown-item">
-                <a href="/">Dress & Frock</a>
+                <a href="/">Lorem Ipsum</a>
               </li>
               <li className="dropdown-item">
-                <a href="/">Earrings</a>
+                <a href="/">Lorem Ipsum</a>
               </li>
               <li className="dropdown-item">
-                <a href="/">Necklace</a>
+                <a href="/">Lorem Ipsum</a>
               </li>
               <li className="dropdown-item">
-                <a href="/">Makeup Kit</a>
+                <a href="/">Lorem Ipsum</a>
+              </li>
+            </ul>
+            
+          </li>
+          <li className="menu-category">
+            <a href="/" className="menu-title">Lorem Ipsum</a>
+            <ul className="dropdown-list">
+              <li className="dropdown-item">
+                <a href="/">Lorem Ipsum</a>
+              </li>
+              <li className="dropdown-item">
+                <a href="/">Lorem Ipsum</a>
+              </li>
+              <li className="dropdown-item">
+                <a href="/">Lorem Ipsum</a>
+              </li>
+              <li className="dropdown-item">
+                <a href="/">Lorem Ipsum</a>
               </li>
             </ul>
           </li>
           <li className="menu-category">
-            <a href="/" className="menu-title">Jewelry</a>
+            <a href="/" className="menu-title">Lorem</a>
             <ul className="dropdown-list">
               <li className="dropdown-item">
-                <a href="/">Earrings</a>
+                <a href="/">Lorem Ipsum</a>
               </li>
               <li className="dropdown-item">
-                <a href="/">Couple Rings</a>
+                <a href="/">Lorem Ipsum</a>
               </li>
               <li className="dropdown-item">
-                <a href="/">Necklace</a>
+                <a href="/">Lorem Ipsum</a>
               </li>
               <li className="dropdown-item">
-                <a href="/">Bracelets</a>
+                <a href="/">Lorem Ipsum</a>
               </li>
             </ul>
           </li>
           <li className="menu-category">
-            <a href="/" className="menu-title">Perfume</a>
-            <ul className="dropdown-list">
-              <li className="dropdown-item">
-                <a href="/">Clothes Perfume</a>
-              </li>
-              <li className="dropdown-item">
-                <a href="/">Deodorant</a>
-              </li>
-              <li className="dropdown-item">
-                <a href="/">Flower Fragrance</a>
-              </li>
-              <li className="dropdown-item">
-                <a href="/">Air Freshener</a>
-              </li>
-            </ul>
+            <a href="/" className="menu-title">Контакты</a>
           </li>
           <li className="menu-category">
-            <a href="/" className="menu-title">Blog</a>
-          </li>
-          <li className="menu-category">
-            <a href="/" className="menu-title">Hot Offers</a>
+            <a href="/" className="menu-title">Разное</a>
           </li>
         </ul>
       </div>

@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import { useState } from 'react';
 import { Badge } from '@mui/material';
 import { FaBars } from "react-icons/fa";
+import { BsSearch } from "react-icons/bs";
 import { ImCross } from "react-icons/im";
 import Cart from '../../Img/icons/cart.png';
 import Favorite from '../../Img/icons/favorite.png';
@@ -42,24 +43,15 @@ export const Navbar = () => {
       <Link to='/' className='navbar-logo'>
         <img className='img-logo' src={Logo} alt="logo" />  
       </Link>
-        <ul className={`nav-links ${mobile && "open"}`}>
-          <div className='nav-items'>
-            <li><Link to='/'>Каталог товаров<i className='fas fa-caret-down'/></Link>
-              <div className='dropdown'>
-                <ul>
-                  <li><a href='/'>Показать все</a></li>
-                  <li><a href='/'>Подгузники</a></li>
-                  <li><a href='/'>Детское питание</a></li>
-                  <li><a href='/'>Lorem, ipsum.</a></li>
-                  <li><a href='/'>Lorem, ipsum.</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href='/'>О нас</a></li>
-            <li><a href='products'>Разное</a></li>
-            <li><a href='/'>Контакты</a></li>
-            <li><a href='/'>Акции</a></li>
+      <div className="header-search-container">
+            <input type="search" name="search" className="search-field" placeholder="Поиск..."/>
+            <div className="search-btn">
+              <BsSearch/>
+            </div>
           </div>
+        <ul className={`nav-links ${mobile && "open"}`}>
+          
+
           <div className='icons'>
           <a href='/cart'>
             <Badge>
